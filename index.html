@@ -516,6 +516,32 @@
         img {
             max-width: 100%;
         }
+        .memory-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.memory-photo {
+    width: 100%;
+    display: block;
+    border-radius: 1.2rem;
+}
+
+/* fallback text */
+.alt-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6px;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 1.2rem;
+}
     </style>
 </head>
 <body>
@@ -548,10 +574,10 @@
     </div>
 
     <!-- fixed bottom cards: memory + calendar -->
-    <div class="memory-card">
-        <img class="memory-photo" src="" alt="Waste PODAAAAA Photo PAMPALEEEEE">
-        <!-- optional caption removed for space but keeps image charm -->
-    </div>
+    <div class="memory-wrapper">
+    <img class="memory-photo" src="" alt="">
+    <div class="alt-text">Waste PODAAAAA Photo PAMPALEEEEE</div>
+</div>
     <div class="calendar-card">
         <div class="calendar-month">MAY</div>
         <div class="calendar-day">04</div>
